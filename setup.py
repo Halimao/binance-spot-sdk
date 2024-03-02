@@ -26,7 +26,7 @@ REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
 setup(
     name=NAME,
     version=VERSION,
-    description="Binance Public Spot API",
+    description="A SDK for Binance Public Spot API",
     author_email="halimao.lin@gmail.com",
     url="https://github.com/Halimao/binance-spot-sdk",
     keywords=["Binance Public Spot API"],
