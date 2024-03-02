@@ -12,8 +12,11 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
+with open("README.md", "r") as fh:
+    LONG_DESCRIPTION = fh.read()
+
 NAME = "binance-spot-sdk"
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 # To install the library, run the following
 #
 # python setup.py install
@@ -33,7 +36,6 @@ setup(
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
-    long_description="""\
-    OpenAPI Specifications for the Binance Public Spot API  API documents:   - [https://github.com/binance/binance-spot-api-docs](https://github.com/binance/binance-spot-api-docs)   - [https://binance-docs.github.io/apidocs/spot/en](https://binance-docs.github.io/apidocs/spot/en)  # noqa: E501
-    """
+    long_description_content_type="text/markdown",
+    long_description=LONG_DESCRIPTION
 )
